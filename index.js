@@ -16,8 +16,8 @@ let lastName = 'Khandelwal';
 
 //constants
 
-// let interestRate = 0.3;
-const interestRate = 0.3;
+let interestRate = 0.3;
+// const interestRate = 0.3;
 interestRate = 1;
 console.log(interestRate);
 
@@ -36,3 +36,9 @@ let age = 21; // Number Literal
 let isApproved = true; // Boolean Literal
 let size = undefined;
 let selectedColor = null;
+
+// 2 types of languages - Static and Dynamic
+// datatype of variables cant be changed in static languages
+// datatype of variables can be changed in dynamic languages at runtime
+// Javascript is a dynamic language
+
