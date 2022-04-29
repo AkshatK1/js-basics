@@ -54,4 +54,15 @@ let person = {
     age: 21  
 };
 
+// (eg - we have to change name of the person)
+// Dot Notation 
+person.name = 'John';
+// Bracket Notation
+person['name'] = 'Mary';
+
+// suppose the property to be accessed is to be determined by user at a later point, then we use bracket notation
+let selection = 'age';
+person[selection] = 23;
+
 console.log(person);
+console.log(person.name);
