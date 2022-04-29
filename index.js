@@ -47,3 +47,11 @@
 // --Array
 // --Function
 
+// object example
+
+let person = {
+    name: 'Akshat',
+    age: 21  
+};
+
+console.log(person);
