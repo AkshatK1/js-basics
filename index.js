@@ -23,3 +23,16 @@ console.log(interestRate);
 
 // let allows variable value to be changed, so if varaible needs to be reassigned - use let
 // const doesnt allow variable value to change, so if variable doesnt need to  be reassigned - use const
+
+// PRIMITIVE/VALUE TYPES
+// --String
+// --Number
+// --Boolean
+// --undefined
+// --null
+
+let name1 = 'Akshat'; // String Literal
+let age = 21; // Number Literal
+let isApproved = true; // Boolean Literal
+let size = undefined;
+let selectedColor = null;
