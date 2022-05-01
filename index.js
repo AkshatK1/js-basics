@@ -98,3 +98,13 @@ function greet3(firstName, lastName)
     console.log('Hello ' + firstName + ' ' + lastName);
 }
 greet3('Akshat', 'Khandelwal');
+
+// above functions were example of "performing a task"
+// below function is an example of "calculating a value"
+function square(number)
+{
+    return number*number;
+}
+let squaredResult = square(2);
+console.log(squaredResult);
+console.log(square(2)); //2nd way of printing result, as we don't necessarily need a variable
