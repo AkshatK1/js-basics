@@ -37,6 +37,8 @@ let isApproved = true; // Boolean Literal
 let size = undefined;
 let selectedColor = null;
 
+// NOTE:- DEFAULT VALUE OF ANY VARIABLE IN JAVASCRIPT IS UNDEFINED
+
 // 2 types of languages - Static and Dynamic
 // datatype of variables cant be changed in static languages
 // datatype of variables can be changed in dynamic languages at runtime
@@ -75,3 +77,24 @@ selectedColors[2] = 'green'; // adding element dynamically to the array
 console.log(selectedColors);
 selectedColors[2] = 1; // we can even change the type of any particular element in js
 console.log(selectedColors);
+
+// Functions
+// function without parameters
+function greet(){
+    console.log('Hello World');
+}
+greet(); // funtion call
+
+// functions with parameters
+function greet2(name){ //name is parameter here
+    console.log('Hello ' + name);
+}
+greet2('Akshat'); // funtion call, 'Akshat' is Arguement here1
+greet2('Nae'); // we can call funtion as many times as possible with different arguements
+
+//multiple parameters funtion
+function greet3(firstName, lastName)
+{
+    console.log('Hello ' + firstName + ' ' + lastName);
+}
+greet3('Akshat', 'Khandelwal');
