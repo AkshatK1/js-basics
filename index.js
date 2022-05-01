@@ -114,3 +114,23 @@ console.log(square(2)); //2nd way of printing result, as we don't necessarily ne
 // --comparison
 // --logical
 // --bitwise
+
+// Arithmetic Operator
+let x = 10;
+let y = 13;
+console.log(x + y); // addition
+console.log(x - y); // subtraction
+console.log(x * y); // multiplication
+console.log(x / y); // division
+console.log(x % y); // remainder of division
+console.log(x ** y); // exponentiation
+// increment operator (++)
+console.log('x++ = ' + x++); // first print x, then increase its value
+console.log('x = ' + x); // to check if above comment is true
+console.log('++x = ' + ++x); // first increase the value of x and then print x
+console.log('x = ' + x); // to check
+// decrement operator (--)
+console.log('x-- = ' + x--); // first print x, then decrease its value
+console.log('x = ' + x); // to check if above comment is true
+console.log('--x = ' + --x); // first decrese the value of x and then print x
+console.log('x = ' + x);
