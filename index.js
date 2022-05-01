@@ -53,7 +53,7 @@ let selectedColor = null;
 
 let person = {
     name: 'Akshat',
-    age: 21  
+    age: 21
 };
 
 // (eg - we have to change name of the person)
@@ -80,31 +80,37 @@ console.log(selectedColors);
 
 // Functions
 // function without parameters
-function greet(){
+function greet() {
     console.log('Hello World');
 }
 greet(); // funtion call
 
 // functions with parameters
-function greet2(name){ //name is parameter here
+function greet2(name) { //name is parameter here
     console.log('Hello ' + name);
 }
 greet2('Akshat'); // funtion call, 'Akshat' is Arguement here1
 greet2('Nae'); // we can call funtion as many times as possible with different arguements
 
 //multiple parameters funtion
-function greet3(firstName, lastName)
-{
+function greet3(firstName, lastName) {
     console.log('Hello ' + firstName + ' ' + lastName);
 }
 greet3('Akshat', 'Khandelwal');
 
 // above functions were example of "performing a task"
 // below function is an example of "calculating a value"
-function square(number)
-{
-    return number*number;
+function square(number) {
+    return number * number;
 }
 let squaredResult = square(2);
 console.log(squaredResult);
 console.log(square(2)); //2nd way of printing result, as we don't necessarily need a variable
+
+// OPERATORS
+// 5 operators in javascript
+// --arithmetic
+// --assignment
+// --comparison
+// --logical
+// --bitwise
