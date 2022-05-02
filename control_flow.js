@@ -61,7 +61,7 @@ do {
 }
 while (i <= 5);
 
-// for...in loop
+// for...in loop, to iterate over properties of an object
 const person = {
     name: 'Akshat',
     age: 21
@@ -72,5 +72,11 @@ for (let key in person) {
 }
 
 const colors = ['red', 'blue', 'green'];
-for (let index in colors)
+for (let index in colors) {
     console.log(index, colors[index]);
+};
+
+// for-of loop, to iterate items of an array
+for (let color of colors) {
+    console.log(color);
+}
