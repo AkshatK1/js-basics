@@ -146,3 +146,18 @@ x *= 5; // multiplication assignment, x=x*5;
 console.log('x*=5 = ' + x);
 x %= 5; // modulus assignment, x=x%5
 console.log('x%=5 = ' + x);
+
+// Comparison Operators
+// -- Relational
+// -- Equality
+
+// Relational operators
+x = 1;
+console.log(x > 0);
+console.log(x >= 1);
+console.log(x < 1);
+console.log(x <= 1);
+
+// Equality operators
+console.log(x === 1);
+console.log(x !== 1);
