@@ -213,3 +213,8 @@ console.log(currentColor);
 userColor = undefined;
 currentColor = userColor || defaultColor;
 console.log(currentColor);
+
+// BITWISE OPERATORs
+console.log(1 | 2); // Bitwise OR
+console.log(1 & 2); // Bitwise AND
+
