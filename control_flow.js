@@ -20,7 +20,7 @@ else
 
 let role = 'guest';
 
-switch (role){
+switch (role) {
     case 'guest':
         console.log('Guest Account');
         break;
@@ -37,3 +37,9 @@ switch (role){
 // -- Do...While
 // -- For...in
 // -- For...of
+
+// for
+for (let i = 1; i <= 5; i++) {
+    if (i % 2 == 0)
+        console.log(i);
+}
