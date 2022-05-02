@@ -161,3 +161,14 @@ console.log(x <= 1); // lesser than equal to
 // Equality operators
 console.log(x === 1); // equal to, strict equality
 console.log(x !== 1); // not equal to
+
+// Strict equaltiy (Type + Value)
+console.log(1 === 1);
+console.log('1' === 1);
+
+// lose equality (Value)
+console.log(1 == 1);
+console.log('1' == 1); // '1' == '1'
+console.log(true == 1); // true = 1, false = 0
+//NOTE: lose equaltiy doesnt match type, only value. if the variable on both sides does not have same data type, it changes
+//      the datatype to match both and gives the result.
