@@ -172,3 +172,9 @@ console.log('1' == 1); // '1' == '1'
 console.log(true == 1); // true = 1, false = 0
 //NOTE: lose equaltiy doesnt match type, only value. if the variable on both sides does not have same data type, it changes
 //      the datatype to match both and gives the result.
+
+// TERNARY OPERATOR
+// eg - If as customer has more that 100 points, they are 'GOLD' Customer otherwise they are 'SILVER'
+let points = 120;
+let type = points > 100 ? 'GOLD' : 'SILVER';
+console.log(type);
