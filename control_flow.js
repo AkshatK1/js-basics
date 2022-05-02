@@ -60,3 +60,17 @@ do {
     i++;
 }
 while (i <= 5);
+
+// for...in loop
+const person = {
+    name: 'Akshat',
+    age: 21
+};
+
+for (let key in person) {
+    console.log(key, person[key]);
+}
+
+const colors = ['red', 'blue', 'green'];
+for (let index in colors)
+    console.log(index, colors[index]);
