@@ -30,3 +30,10 @@ switch (role){
     default:
         console.log('Unknown User');
 }
+
+// LOOPS in JS
+// -- For
+// -- While
+// -- Do...While
+// -- For...in
+// -- For...of
