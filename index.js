@@ -153,11 +153,11 @@ console.log('x%=5 = ' + x);
 
 // Relational operators
 x = 1;
-console.log(x > 0);
-console.log(x >= 1);
-console.log(x < 1);
-console.log(x <= 1);
+console.log(x > 0); // greater than
+console.log(x >= 1); // greater than equal to
+console.log(x < 1); // less than
+console.log(x <= 1); // lesser than equal to
 
 // Equality operators
-console.log(x === 1);
-console.log(x !== 1);
+console.log(x === 1); // equal to, strict equality
+console.log(x !== 1); // not equal to
