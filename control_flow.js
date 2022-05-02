@@ -80,3 +80,13 @@ for (let index in colors) {
 for (let color of colors) {
     console.log(color);
 }
+
+// EXERCISE - max of 2 numbers
+
+function max(a, b) {
+    return (a > b) ? a : b;
+}
+
+let no1 = 10;
+let no2 = 12;
+console.log(max(no1, no2));
