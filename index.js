@@ -178,3 +178,38 @@ console.log(true == 1); // true = 1, false = 0
 let points = 120;
 let type = points > 100 ? 'GOLD' : 'SILVER';
 console.log(type);
+
+// LOGICAL OPERATORS 
+// Logical AND (&&) , returns true if both operands are true
+// Logical OR (||)  , returns true if one of the operands are true
+// Logical NOT (!)
+
+// Logical Operators with Non-Booleans
+// -- Falsy
+// -- Truthy
+
+// Falsy
+// -- undefined
+// -- null
+// -- 0
+// -- false
+// -- ''
+// -- NaN
+
+// Truthy -> Anything that is not Falsy
+
+console.log(false || true); // true
+console.log(false || 'Akshat'); // 'Akshat'
+console.log(false || 1); // 1
+console.log(false || 1 || 2); // 1 -> This concept is called short-circuiting, only first operator is evaluated
+console.log(false || 0);
+
+// NOTE:- If the other side of operator has any other value than true or false, truthy is returned
+// example - suppose user has to select a color, if he doesnt select a color, return the default color
+let userColor = 'red';
+let defaultColor = 'blue';
+let currentColor = userColor || defaultColor;
+console.log(currentColor);
+userColor = undefined;
+currentColor = userColor || defaultColor;
+console.log(currentColor);
