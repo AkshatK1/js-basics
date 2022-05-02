@@ -134,3 +134,15 @@ console.log('x-- = ' + x--); // first print x, then decrease its value
 console.log('x = ' + x); // to check if above comment is true
 console.log('--x = ' + --x); // first decrese the value of x and then print x
 console.log('x = ' + x);
+
+// Assignment Operators
+x += 5; // Addition assignment, same as x = x + 5
+console.log('x+=5 = ' + x);
+x -= 5; // subtraction assignment, x = x- 5;
+console.log('x-=5 = ' + x);
+x /= 5; // division assignment, x = x/5;
+console.log('x/=5 = ' + x);
+x *= 5; // multiplication assignment, x=x*5; 
+console.log('x*=5 = ' + x);
+x %= 5; // modulus assignment, x=x%5
+console.log('x%=5 = ' + x);
