@@ -119,3 +119,24 @@ function fizzBuzz(input) {
 
     return input;
 }
+
+// EXERCISE - Demerit points
+
+const speedLimit = 70;
+const kmPerPoint = 5;
+let speedRecorded = 130;
+
+console.log(checkSpeed(speedRecorded));
+
+function checkSpeed(speed) {
+    if (speed < speedLimit + kmPerPoint)
+        return 'Ok';
+    else {
+        let speedAboveLimit = speed - speedLimit;
+        const points = Math.floor(speedAboveLimit / kmPerPoint);
+        if (points < 12)
+            return 'Points: ' + points;
+        else
+            return 'License Suspended';
+    }
+}
