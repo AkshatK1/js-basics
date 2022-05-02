@@ -90,3 +90,12 @@ function max(a, b) {
 let no1 = 10;
 let no2 = 12;
 console.log(max(no1, no2));
+
+// EXERCISE - landscape or potrait
+
+function isLandscape(width, height) {
+    return (width > height) ? 'landscape' : 'potrait';
+}
+let w = 1920;
+let h = 1080;
+console.log(isLandscape(w, h));
