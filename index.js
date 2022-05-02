@@ -218,3 +218,15 @@ console.log(currentColor);
 console.log(1 | 2); // Bitwise OR
 console.log(1 & 2); // Bitwise AND
 
+// EXERCISE - swap variables
+
+let a = 'red';
+let b = 'blue';
+
+let c = undefined;
+c = a;
+a = b;
+b = c;
+
+console.log(a);
+console.log(b);
