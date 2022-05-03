@@ -155,3 +155,21 @@ function countTruthy(array) {
     }
     return count;
 }
+
+// EXERCISE - String Properties
+
+const movie = {
+    title: 'Transformers X',
+    releaseYear: 2022,
+    rating: 5,
+    director: 'Akshat'
+};
+
+showProperties(movie);
+
+function showProperties(object) {
+    for (let key in movie) {
+        if (typeof object[key] === 'string')
+            console.log(key, object[key]);
+    }
+}
