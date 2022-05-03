@@ -140,3 +140,18 @@ function checkSpeed(speed) {
             return 'License Suspended';
     }
 }
+
+// EXERCISE - Count truthy
+
+const array = [0, null, undefined, '', 2, 3];
+
+console.log(countTruthy(array));
+
+function countTruthy(array) {
+    let count = 0;
+    for (let a of array) {
+        if (a)
+            count++;
+    }
+    return count;
+}
