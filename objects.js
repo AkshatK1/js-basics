@@ -173,3 +173,22 @@ function CreateAddress(street, city, zipCode) {
 }
 const address2 = new CreateAddress('74 Taylor Street', 'New York City', '10011');
 console.log(address2);
+
+// Exercise 3 - Object Equality
+
+// using CreateAddress and address2 from above Constructor Function
+const address1 = new CreateAddress('74 Taylor Street', 'New York City', '10011');
+console.log(address1);
+
+function areEqual(a1, a2) {
+    return a1.street === a2.street &&
+        a1.city === a2.city &&
+        a1.zipCode === a2.zipCode;
+}
+
+function areSame(address1, address2) {
+    return address1 === address2;
+}
+
+console.log(areEqual(address1, address2));
+console.log(areSame(address1, address2));
