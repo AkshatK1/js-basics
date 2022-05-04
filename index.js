@@ -32,7 +32,7 @@ console.log(interestRate);
 // --null
 
 let name1 = 'Akshat'; // String Literal
-let age = 21; // Number Literal
+let age = 200; // Number Literal
 let isApproved = true; // Boolean Literal
 let size = undefined;
 let selectedColor = null;
