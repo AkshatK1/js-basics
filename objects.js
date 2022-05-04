@@ -12,3 +12,18 @@ const circle = {
 };
 
 circle.draw(); //method
+
+//Dynamic Nature of objects in JS
+
+const ellipse = {
+    radius: 1
+};
+
+ellipse.color = 'red';
+ellipse.draw = function () { };
+console.log(ellipse);
+
+delete ellipse.color;
+delete ellipse.draw;
+
+console.log(ellipse);
