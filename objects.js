@@ -82,3 +82,26 @@ for (let entry of Object.entries(circle)) // here for of loop works, because Obj
     console.log(entry);
 
 if ('color' in circle) console.log('yes'); // to check if 'color' property is present in circle object, change to 'draw' to see yes
+
+// CLONING AN OBJECT
+
+const copyOfCircle = {}; // copy of circle object
+
+// Old Way
+for (let key in circle) {
+    copyOfCircle[key] = circle[key];
+}
+console.log(copyOfCircle);
+
+// Object.assign() method
+const copyOfCircle2 = Object.assign({}, circle);
+console.log('2', copyOfCircle2);
+// this can append properties of other object in it with asssign method, like shown below
+const copyOfCircle3 = Object.assign({
+    color: 'yellow'
+}, circle);
+console.log('3', copyOfCircle3);
+
+// spread operator (...)
+const copyOfCircle4 = { ...circle };
+console.log("4", copyOfCircle4);
