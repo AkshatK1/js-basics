@@ -49,3 +49,22 @@ function Circle(radius) {
 }
 const another = new Circle(1);
 console.log(another);
+
+// NOTE: Functions are objects in Java
+
+// REFERENCE TYPES IN JS
+// -- Object
+// -- Function
+// -- Array
+
+// NOTE: Primitives are copied by their value, Objects are copied by their reference
+// example:- 
+let x = {
+    value: 10
+};
+let y = x;
+console.log("x = ", x);
+console.log('y = ', y);
+x.value = 20;
+console.log("x = ", x);
+console.log('y = ', y);
