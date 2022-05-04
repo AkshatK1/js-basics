@@ -105,3 +105,28 @@ console.log('3', copyOfCircle3);
 // spread operator (...)
 const copyOfCircle4 = { ...circle };
 console.log("4", copyOfCircle4);
+
+// TEMPLATE LITERALS IN JS
+
+const message = 'This is my \'first\' message'; // String primitive
+console.log(message);
+
+const templateString = `This is my 'first' message`; // template using backtick (`)
+console.log(templateString);
+// both prints the same message, which code looks cleaner? 
+// furthurmore, its easier and faster if we use template literals
+// suppose you have to write mail, formatting becomes easier in template literal
+
+// another example of template literal
+const name = 'Akshat';
+const normalMail = 'Hi ' + name + ',\n\n' + 'Thank you for joining my mailing list.\n\nRegards,\nDank Memer';
+const templateMail =
+    `Hi ${name},
+
+Thank you for joining my mailing list.
+
+Regards,
+Dank Memer`;
+
+console.log(normalMail);
+console.log(templateMail);
