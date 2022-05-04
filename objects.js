@@ -130,3 +130,23 @@ Dank Memer`;
 
 console.log(normalMail);
 console.log(templateMail);
+
+// EXERCISE - Address Object
+
+let Address = {
+    street: '74 Taylor Street',
+    city: 'New York City',
+    zipCode: '10011',
+};
+
+function showAddress(address) {
+    // console.log(`Address: ${address.street}, ${address.city}, ${address.zipCode}.`); 
+    // i did this by above because we know what properties address object have
+    // in case we don't know what properties address object have
+    let completeAddress = '';
+    for (let key in address)
+        completeAddress += `${key}: ${address[key]} `;
+    console.log(completeAddress);
+}
+
+showAddress(Address);
