@@ -146,8 +146,30 @@ function showAddress(address) {
     let completeAddress = '';
     for (let key in address)
         completeAddress += `${key}: ${address[key]} `;
-        
+
     console.log(completeAddress);
 }
 
 showAddress(Address);
+
+// EXERCISE - Factory and Constructor Functions
+
+// Factory Function
+function createAddress(street, city, zipCode) {
+    return {
+        street,
+        city,
+        zipCode,
+    };
+}
+const address = createAddress('74 Taylor Street', 'New York City', '10011');
+console.log(address);
+
+// Constructor Function
+function CreateAddress(street, city, zipCode) {
+    this.street = street;
+    this.city = city;
+    this.zipCode = zipCode;
+}
+const address2 = new CreateAddress('74 Taylor Street', 'New York City', '10011');
+console.log(address2);
