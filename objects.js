@@ -27,3 +27,25 @@ delete ellipse.color;
 delete ellipse.draw;
 
 console.log(ellipse);
+
+// Factory Function
+function createCircle(radius) {
+    return {
+        radius,
+        draw: function () {
+            console.log('draw');
+        }
+    };
+}
+const circle2 = createCircle(1);
+console.log(circle2);
+
+// Constructor Function
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function () {
+        console.log('draw');
+    }
+}
+const another = new Circle(1);
+console.log(another);
