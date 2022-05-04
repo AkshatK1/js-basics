@@ -192,3 +192,19 @@ function areSame(address1, address2) {
 
 console.log(areEqual(address1, address2));
 console.log(areSame(address1, address2));
+
+// EXERCISE 4 - Blog Post Object
+
+let blogPost = {
+    title: 'How to Fight?',
+    body: 'Its easy',
+    author: 'Maelstrom',
+    views: 3498,
+    comments: [
+        { author: 'Naruto', body: 'Dattebayo' },
+        { author: 'Sasuke', body: 'Hn' },
+        { author: 'Kakashi', body: 'Did you say something?' }
+    ],
+    isLive: true
+};
+console.log(blogPost);
