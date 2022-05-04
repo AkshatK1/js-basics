@@ -68,3 +68,17 @@ console.log('y = ', y);
 x.value = 20;
 console.log("x = ", x);
 console.log('y = ', y);
+
+// NOTE: Object is not iterable, so for-of loop won't work, because for-of loop only works on array and maps
+
+Object.keys(circle); // return keys of object as an array
+
+for (let key of Object.keys(circle)) // here for of loop works, because Object.keys return array of keys of an object
+    console.log(key);
+
+Object.entries(circle); // will return all the entries of an object (the key value pair) as array
+
+for (let entry of Object.entries(circle)) // here for of loop works, because Object.keys return array of keys of an object
+    console.log(entry);
+
+if ('color' in circle) console.log('yes'); // to check if 'color' property is present in circle object, change to 'draw' to see yes
