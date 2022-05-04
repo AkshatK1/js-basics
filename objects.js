@@ -146,6 +146,7 @@ function showAddress(address) {
     let completeAddress = '';
     for (let key in address)
         completeAddress += `${key}: ${address[key]} `;
+        
     console.log(completeAddress);
 }
 
