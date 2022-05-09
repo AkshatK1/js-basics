@@ -115,7 +115,7 @@ copyComb.forEach((number, index) => console.log(index, number));
 
 // JOINING ARRAYS
 // Array to String
-const b = [1,2,3];
+const b = [1, 2, 3];
 const joined = b.join('hello');
 console.log(joined);
 // String to array
@@ -124,3 +124,10 @@ const parts = msg.split(' ');
 console.log(parts);
 const joinParts = parts.join('--');
 console.log(joinParts);
+
+// SORTING ARRAYS
+const n = [1, 4, 5, 76, 2, 52];
+n.sort(); // sort array in ascending order
+console.log(n);
+n.reverse(); // reverse the array, in this case the ascending array is reversed so it makes it descending
+console.log(n);
