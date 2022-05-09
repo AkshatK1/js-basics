@@ -151,3 +151,17 @@ subjects.sort(function (a, b) { // a and b are first subject object and second s
 });
 
 console.log(subjects);
+
+// TESTING THE ELEMENTS OF ARRAY
+
+const array = [1, -1, 2, 4, 3];
+const allPositive = array.every(function (element) {
+    return element >= 0;
+});
+// every() checks if all elemnets in array matches the criteria
+const atleastOnePositive = array.some(function (element) {
+    return element >= 0;
+});
+//some() checks if any one element in array matches the criteria
+console.log(allPositive);
+console.log(atleastOnePositive);
