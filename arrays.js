@@ -165,3 +165,9 @@ const atleastOnePositive = array.some(function (element) {
 //some() checks if any one element in array matches the criteria
 console.log(allPositive);
 console.log(atleastOnePositive);
+
+// FILTERING ARRAY
+// using the above array
+const filtered = array.filter(element => element >= 0);
+console.log(filtered);
+// filters the elements that matches the critera and creates a new array of those elements
