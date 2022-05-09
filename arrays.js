@@ -51,3 +51,12 @@ const findCourse = courses.find(function (course) {
 
 console.log(findCourse);
 
+// Arrow Functions
+// the above function can be written in another way easily, by arrow functions. See how below
+// the function keyword can be removed, amd replaced by (fat arrow ) =>, which is put after the parameters 
+// the bracket around the parameter of function (course), can be removed if, there is a single parameter. 
+// We have to put the () if there are multiple parameters
+// if there are no parameters, we have to pass empty ()
+// if our function is a single line of code, and is returning a value, we can remove return keyword and {}
+const findCourse2 = courses.find(course => course.name === 'a');
+console.log(findCourse2);
