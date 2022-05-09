@@ -69,3 +69,16 @@ console.log(findCourse);
 // if our function is a single line of code, and is returning a value, we can remove return keyword and {}
 const findCourse2 = courses.find(course => course.name === 'a');
 console.log(findCourse2);
+
+// EMPTYING AN ARRAY
+const a = [1, 2, 3, 4];
+// Solution 1
+// a = []; // wont work if array is const
+// Solution 2
+a.length = 0; //best solution
+console.log(a);
+// Solution 3
+// a.splice(0, a.length);
+// Solution 4
+// while (a.length > 0)
+//     a.pop(); // worst solution
