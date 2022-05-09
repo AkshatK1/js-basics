@@ -82,3 +82,21 @@ console.log(a);
 // Solution 4
 // while (a.length > 0)
 //     a.pop(); // worst solution
+
+// COMBINING AND SLICING ARRAYS
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+
+const combined = first.concat(second);
+console.log(combined);
+
+const slice = combined.slice(2, 4);
+console.log(slice);
+
+const slice2 = combined.slice(2);
+console.log(slice2);
+
+const copy = combined.slice();
+console.log(copy);
+
+// NOTE: if we use refrence types in Array, the reference of object is copied, and if the value is Changed, its changed in all 
