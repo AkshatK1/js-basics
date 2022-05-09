@@ -14,6 +14,15 @@ numbers.splice(2, 0, 'a', 'b');
 // syntax: array.splice(index before which element to be inserted, elements to be deleted, elements to be inserted comma separated)
 console.log(numbers);
 
+// REMOVING ELEMENTS IN AN ARRAY
+const arr = [1, 2, 3, 4];
+// End
+arr.pop();
+// Beginning
+arr.shift();
+// Middle
+arr.splice(2, 1);
+
 // FINDING ELEMENTS IN AN ARRAY
 // Finding Primitives
 //using the same array from above
