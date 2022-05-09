@@ -112,3 +112,15 @@ for (let elements of copyComb)
     console.log(elements);
 
 copyComb.forEach((number, index) => console.log(index, number));
+
+// JOINING ARRAYS
+// Array to String
+const b = [1,2,3];
+const joined = b.join('hello');
+console.log(joined);
+// String to array
+const msg = 'Hello I am Akshat';
+const parts = msg.split(' ');
+console.log(parts);
+const joinParts = parts.join('--');
+console.log(joinParts);
