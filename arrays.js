@@ -106,3 +106,9 @@ const third = [1, 2, 3, 4];
 const fourth = [5, 6, 7, 8];
 const comb = [...third, 'a', ...fourth];
 const copyComb = [...comb];
+
+// ITERATING AND ARRAY
+for (let elements of copyComb)
+    console.log(elements);
+
+copyComb.forEach((number, index) => console.log(index, number));
