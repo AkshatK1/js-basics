@@ -35,3 +35,19 @@ console.log(numbers.includes(1));
 // syntax: array.indexOf(element to be searched, starting index)
 numbers.indexOf(1, 2);
 console.log(numbers.indexOf(1, 2));
+
+// Finding reference types
+// creating array of objects
+const courses = [
+    { id: 1, name: 'a' },
+    { id: 2, name: 'b' },
+];
+
+const findCourse = courses.find(function (course) {
+    return course.name === 'a'; // returns whole element if found, undefined if not found
+});
+
+// replace the above find function with findIndex(), to get the index of element if present, else -1 if not present.
+
+console.log(findCourse);
+
