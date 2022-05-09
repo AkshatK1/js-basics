@@ -100,3 +100,9 @@ const copy = combined.slice();
 console.log(copy);
 
 // NOTE: if we use refrence types in Array, the reference of object is copied, and if the value is Changed, its changed in all 
+
+// SPREAD OPERATOR FOR COMBIniNG
+const third = [1, 2, 3, 4];
+const fourth = [5, 6, 7, 8];
+const comb = [...third, 'a', ...fourth];
+const copyComb = [...comb];
