@@ -131,3 +131,23 @@ n.sort(); // sort array in ascending order
 console.log(n);
 n.reverse(); // reverse the array, in this case the ascending array is reversed so it makes it descending
 console.log(n);
+
+// SORTING ARRAY OF OBJECTS
+
+const subjects = [
+    { id: '1', name: 'Computer' },
+    { id: '2', name: 'algebra' }
+];
+
+subjects.sort(function (a, b) { // a and b are first subject object and second subject object, necessary to compare
+    // a < b => -1
+    // a > b => 1
+    // a===b => 0
+    const nameA = a.name.toLowerCase(); // to ignore case senstivity
+    const nameB = b.name.toLowerCase();
+    if (nameA < nameB) return -1;
+    if (nameA > nameB) return 1;
+    return 0;
+});
+
+console.log(subjects);
