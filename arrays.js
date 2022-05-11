@@ -199,3 +199,17 @@ console.log(sum);
 // const sum = nos.reduce((accumulator, currentValue) => {
 //     return accumulator + currentValue;
 // }, 0 /* value with which you want to initialize accumulator variable */);
+
+// EXERCISE 3 - EXCEPT
+const array2 = [1, 2, 3, 4, 1, 1, 1];
+const output = except(array2, [1, 2]);
+console.log(output);
+
+function except(array, excludeArray) {
+    const afterExclusionArray = [];
+    for (let n of array) {
+        if (!excludeArray.includes(n))
+            afterExclusionArray.push(n);
+    }
+    return afterExclusionArray;
+}
