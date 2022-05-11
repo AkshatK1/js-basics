@@ -219,9 +219,9 @@ function except(array, excludeArray) {
 const output1 = move(array2, 0, 2);
 console.log(output1);
 
-function move(array, index, offset){
+function move(array, index, offset) {
     const position = index + offset;
-    if(position < 0 || position >= array.length){
+    if (position < 0 || position >= array.length) {
         console.error('Invalid Offset');
         return;
     }
@@ -231,3 +231,21 @@ function move(array, index, offset){
     output.splice(position, 0, element);
     return output;
 }
+
+// EXERCISE 7 - MOVIES
+const movies = [
+    { title: 'a', year: 2018, rating: 4.5 },
+    { title: 'b', year: 2018, rating: 4.7 },
+    { title: 'c', year: 2018, rating: 3 },
+    { title: 'd', year: 2017, rating: 4.5 },
+];
+// get all the movies in 2018 with rating > 4
+// sort them by their rating in descending order
+// pick and display their title
+const outputMovies = movies
+    .filter(movie => movie.year === 2018 && movie.rating >= 4)
+    .sort((movie1, movie2) => movie1.rating - movie2.rating)
+    .reverse()
+    .map(movie => movie.title);
+
+console.log(outputMovies);
