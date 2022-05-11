@@ -27,7 +27,7 @@ move();         // and can be called in this way
 // that's because javascript engine moves all the function declaration above at the top of the file, this process is hoisting
 
 a();
-b();
+// b();
 
 function a(){
     console.log('a');
@@ -35,3 +35,14 @@ function a(){
 let b = function(){
     console.log('b');
 };
+
+// arguments keyword
+// using this keyword, we can pass as many arguments we want, even if the declared function has more or less or no parameters
+function sum(){
+    let total = 0;
+    for (let value of arguments)
+        total += value;
+    return total;
+}
+
+console.log(sum(1, 2, 4, 5, 3, 10));
