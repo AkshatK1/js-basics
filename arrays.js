@@ -171,3 +171,18 @@ console.log(atleastOnePositive);
 const filtered = array.filter(element => element >= 0);
 console.log(filtered);
 // filters the elements that matches the critera and creates a new array of those elements
+
+// MAPPING ARRAY
+// mapping array to string
+const items = filtered.map(n => '<li>' + n + '</li>');
+const html = '<ul>' + items.join('') + '</ul>';
+console.log(html);
+// mapping array to object
+const objMap = filtered.map(n => ({ value: n })); // whenever returning an object in arrow function, make sure to surround it with ()
+console.log(objMap);
+// chaining methods
+const chaining = objMap
+    .filter(obj => obj.value > 1)
+    .map(obj => obj.value);
+
+console.log(chaining);
