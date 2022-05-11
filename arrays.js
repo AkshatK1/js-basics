@@ -201,7 +201,7 @@ console.log(sum);
 // }, 0 /* value with which you want to initialize accumulator variable */);
 
 // EXERCISE 3 - EXCEPT
-const array2 = [1, 2, 3, 4, 1, 1, 1];
+const array2 = [1, 2, 3, 4,];
 const output = except(array2, [1, 2]);
 console.log(output);
 
@@ -212,4 +212,22 @@ function except(array, excludeArray) {
             afterExclusionArray.push(n);
     }
     return afterExclusionArray;
+}
+
+// EXERCISE 4 - Moving an element
+// using array from previous exercise
+const output1 = move(array2, 0, 2);
+console.log(output1);
+
+function move(array, index, offset){
+    const position = index + offset;
+    if(position < 0 || position >= array.length){
+        console.error('Invalid Offset');
+        return;
+    }
+
+    const output = [...array];
+    const element = output.splice(index, 1)[0];
+    output.splice(position, 0, element);
+    return output;
 }
