@@ -186,3 +186,16 @@ const chaining = objMap
     .map(obj => obj.value);
 
 console.log(chaining);
+
+// REDUCING AN ARRAY
+const nos = [1, -1, 2, 3, 6, 5];
+// the sum of array is generally caluclated by for loop
+// here we will do it with reduce() method
+const sum = nos.reduce(
+    (accumulator, currentValue) => accumulator + currentValue
+);
+console.log(sum);
+// the syntax of this function is below
+// const sum = nos.reduce((accumulator, currentValue) => {
+//     return accumulator + currentValue;
+// }, 0 /* value with which you want to initialize accumulator variable */);
