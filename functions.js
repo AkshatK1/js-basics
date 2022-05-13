@@ -81,3 +81,32 @@ const person = {
 
 person.fullName = 'Maelstrom Whirl';
 console.log(person);
+
+// EXCEPTION HANDLING - try and catch
+const person2 = {
+    firstName: 'Akshat',
+    lastName: 'Khandelwal',
+    get fullName() {
+        return `${this.firstName} ${this.lastName}`;
+    },
+    set fullName(value) {
+        if (typeof value !== 'string')
+            throw new Error('Value is not a string');
+
+        const parts = value.split(' ');
+        if (parts.length !== 2)
+            throw new Error('Enter a first name and last name');
+
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+    }
+};
+
+try {
+    person2.fullName = 'Maelstrom Whirl'; // change this to null/undefined or a name with only first name to test the exceptions
+}
+catch (e) {
+    alert(e);
+}
+
+console.log(person2);
