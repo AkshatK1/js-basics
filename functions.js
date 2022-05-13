@@ -1,17 +1,17 @@
 // Function Declaration
-function walk(){
+function walk() {
     console.log('walk');
 }
 walk();
 
 // Anonymous Function Expression
-const run = function(){
+const run = function () {
     console.log('run');
 };
 run();
 
 // Named Function Expression
-const jog = function name(){
+const jog = function name() {
     console.log('jog');
 }
 jog();
@@ -29,16 +29,16 @@ move();         // and can be called in this way
 a();
 // b();
 
-function a(){
+function a() {
     console.log('a');
 }
-let b = function(){
+let b = function () {
     console.log('b');
 };
 
 // arguments keyword
 // using this keyword, we can pass as many arguments we want, even if the declared function has more or less or no parameters
-function sum(){
+function sum() {
     let total = 0;
     for (let value of arguments)
         total += value;
@@ -46,3 +46,12 @@ function sum(){
 }
 
 console.log(sum(1, 2, 4, 5, 3, 10));
+
+// rest operator
+function sum2(discount, ...prices) { // here ...prices is an array, ... is rest operator, this whole is called rest parameter
+    // rest parameter are always the last parameter, otherwise it will give error
+    console.log(discount);
+    console.log(prices);
+}
+
+console.log(sum2(1, 2, 4, 5, 3, 10));
