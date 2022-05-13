@@ -117,3 +117,14 @@ console.log(person2);
 // method -> object
 // function -> global (window, global)
 // arrow function inherits this keyword
+
+// EXERCISE 1 - SUM OF ARGUEMENTS
+
+function sum(...args) {
+    if (args.length === 1 && Array.isArray(args[0]))
+        return args[0].reduce((a, b) => a + b);
+
+    return args.reduce((a, b) => a + b);
+}
+
+console.log(sum([1, 2, 3, 4]));
