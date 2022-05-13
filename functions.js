@@ -131,8 +131,26 @@ console.log(sum([1, 2, 3, 4]));
 // EXERCISE 2 - AREA OF CIRCLE
 const circle = {
     radius: 1,
-    get area(){
+    get area() {
         return Math.PI * this.radius * this.radius;
     }
 };
 console.log(circle.area);
+
+// EXERCISE 3 - ERROR HANDLING
+const numbers = [1, 3, 2, 4];
+try {
+    const sumO = add(null);
+    console.log(sumO);
+}
+catch (e) {
+    console.log(e.message);
+}
+
+
+function add(array) {
+    if (!Array.isArray(array))
+        throw new Error('Invalid Array');
+
+    return array.reduce((a, b) => a + b);
+}
