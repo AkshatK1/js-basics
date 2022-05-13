@@ -110,3 +110,10 @@ catch (e) {
 }
 
 console.log(person2);
+
+// THIS KEYWORD
+// this keyword refers to the object that is executing the current function
+// NOTE:
+// method -> object
+// function -> global (window, global)
+// arrow function inherits this keyword
