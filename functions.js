@@ -55,3 +55,10 @@ function sum2(discount, ...prices) { // here ...prices is an array, ... is rest 
 }
 
 console.log(sum2(1, 2, 4, 5, 3, 10));
+
+// default parameters
+function interest(principal, rate = 3.5, years = 5) {
+    return principal * rate / 100 * years;
+}
+
+console.log(interest(10000));
