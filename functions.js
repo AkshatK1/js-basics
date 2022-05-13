@@ -119,7 +119,6 @@ console.log(person2);
 // arrow function inherits this keyword
 
 // EXERCISE 1 - SUM OF ARGUEMENTS
-
 function sum(...args) {
     if (args.length === 1 && Array.isArray(args[0]))
         return args[0].reduce((a, b) => a + b);
@@ -128,3 +127,12 @@ function sum(...args) {
 }
 
 console.log(sum([1, 2, 3, 4]));
+
+// EXERCISE 2 - AREA OF CIRCLE
+const circle = {
+    radius: 1,
+    get area(){
+        return Math.PI * this.radius * this.radius;
+    }
+};
+console.log(circle.area);
